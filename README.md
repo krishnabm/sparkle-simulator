@@ -1,4 +1,4 @@
-# strike-shock
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/krishnabm/strike-shock)
+# Sparkle-Simulator
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/krishnabm/sparkle-simulator)
 
-This is a template repository to jumpstart Amulet Lua projects.
+This is a demonstrative cross platform app for lua.
