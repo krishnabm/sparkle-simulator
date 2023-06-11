@@ -6,12 +6,12 @@ local titleNode = am.translate(0, 300)
     end)
     ^ am.text("Sparkle Simulator!")
 
-local startText = "Hit X to begin!"
+local startText = "Hit X or click to begin!"
 
 if am.platform == "windows" or am.platform == "linux" or am.platform == "osx" then
-  startText = "Hit X to begin"
+  startText = "Hit X or click to begin!"
 else
-  startText = "Tap to begin"
+  startText = "Tap to begin!"
 end
 
 local actionTextNode = am.translate(0, -100)
