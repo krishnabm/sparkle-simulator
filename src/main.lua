@@ -18,7 +18,7 @@ MainMenuScene:action("MainMenuScene:MainAction", function(scene)
 end)
 
 LaunchScene:action("LaunchScene:MainAction", function(scene)
-  if window:key_down "q" then
+  if window:key_down "q" or window:key_down "escape" then
     window:close()
   end
   if isTouchEnv then
