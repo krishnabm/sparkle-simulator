@@ -15,5 +15,19 @@
         "panel": "shared"
       }
     },
+    {
+      "label": "Export",
+      "detail": "Default target: Windows",
+      "type": "shell",
+      "command": "amulet export -windows -r -a -o builds/sparkle-simulator.zip src",
+      "windows": {
+        "command": "amulet export -windows -r -a -o builds\\sparkle-simulator.zip src"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
   ]
 }
