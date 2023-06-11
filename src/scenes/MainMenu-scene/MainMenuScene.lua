@@ -6,11 +6,19 @@ local titleNode = am.translate(0, 300)
     end)
     ^ am.text("Sparkle Simulator!")
 
-local actionTextNode = am.translate(0, -10)
-    ^ am.scale(2)
-    ^ am.text("Hit X to begin!");
+local startText = "Hit X to begin!"
+
+if am.platform == "windows" or am.platform == "linux" or am.platform == "osx" then
+  startText = "Hit X to begin"
+else
+  startText = "Tap to begin"
+end
+
+local actionTextNode = am.translate(0, -100)
+    ^ am.scale(3)
+    ^ am.text(startText);
 
 
-local MainMenuScene = am.group { titleNode, actionTextNode };
+local MainMenuScene = am.group { titleNode, actionTextNode }
 
 return MainMenuScene
