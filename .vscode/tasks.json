@@ -16,12 +16,26 @@
       }
     },
     {
-      "label": "Export",
-      "detail": "Default target: Windows",
+      "label": "Export - Windows",
+      "detail": "Target: Windows",
       "type": "shell",
       "command": "amulet export -windows -r -a -o builds/sparkle-simulator.zip src",
       "windows": {
         "command": "amulet export -windows -r -a -o builds\\sparkle-simulator.zip src"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Export - Android",
+      "detail": "Target: Android",
+      "type": "shell",
+      "command": "amulet export -android-studio-proj -r -a -o builds/sparkle-simulator.zip src",
+      "windows": {
+        "command": "amulet export -android-studio-proj -r -a -o builds\\sparkle-simulator.zip src"
       },
       "group": "build",
       "presentation": {
