@@ -16,6 +16,20 @@
       }
     },
     {
+      "label": "RunAmulet - debugContainer",
+      "detail": "Run Amulet",
+      "type": "shell",
+      "command": "amulet /src/debug.lua",
+      "windows": {
+        "command": "amulet .\\src\\debug.lua"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
       "label": "Export - Windows",
       "detail": "Target: Windows",
       "type": "shell",
