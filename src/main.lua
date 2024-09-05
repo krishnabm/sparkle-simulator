@@ -23,6 +23,9 @@ LaunchScene:action("LaunchScene:MainAction", function(scene)
   end
   if isTouchEnv then
     scene("_sparklesNode").source_pos = window:touch_position()
+    if #window:touches_ended() >= 1 then
+      scene("_sparklesNode").start_color = vec4(math.random(), math.random(), math.random(), 0.9)
+    end
   else
     scene("_sparklesNode").source_pos = window:mouse_position()
 
